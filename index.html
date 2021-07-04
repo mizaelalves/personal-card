@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>card profile</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box-info">
+      <div class="info">
+        <img id="avatar" src="./assets/perfil.jpg" width="10%" />
+        <div class="name">
+          <h4>Mizael Alves da Silva</h4>
+          <p>Graduando de Engenharia de Computação</p>
+          <p>Apaixonado por tecnologia</p>
+        </div>
+      </div>
+      <div class="lang">
+        <img id="arduino" src="./assets/arduino.svg"/>
+        <img id="python" src="./assets/python.svg" />
+        <img id="node" src="./assets/node-js.svg" />
+        <img id="vue" src="./assets/vue.svg"/>
+      </div>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank"><img id="facebook" src="./assets/facebook-logo-2019.svg" /></a>
+        <a href="https://whatsapp.com" target="_blank"><img id="whatsapp" src="./assets/whatsapp.svg" /></a>
+        <a href="https://twitter.com" target="_blank"><img id="twitter" src="./assets/twitter.svg" /></a>
+        <a href="https://github.com" target="_blank"><img id="github" src="./assets/github.svg" /></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+  html,
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to top left, rgb(117, 22, 126), rgb(18, 81, 130));
+  }
+
+  .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .box-info {
+    justify-self: center;
+    background-color: #ddd;
+    height: 180px;
+    width: 350px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+  }
+
+  #avatar {
+    box-shadow: 0 8px 15px 5px rgba(31, 38, 135, 0.37);;
+    border-radius: 50%;
+    width: 80px;
+    bottom: 40px;
+    left: 7px;
+    position: relative;
+    transition: border-radius 0.5s ease-in;
+  }
+
+  #avatar:hover {
+    border-radius: 10px;
+  }
+
+  h4, p {
+    margin: 5px 10px;
+  }
+
+  .name {
+    position: relative;
+    bottom: 50px;
+    margin-top: 20px;
+  }
+
+  .social {
+    display: grid;
+    grid-template-columns: 2.2rem 2.2rem 2.2rem 2.2rem;
+    grid-template-rows: 30px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 12.4rem;
+    cursor: pointer;
+  }
+
+  .lang {
+    display: grid;
+    grid-template-columns: 2rem 2rem 2rem 2.2rem;
+    grid-template-rows: 6.5rem;
+    position: absolute;
+    bottom: 60px;
+    margin-left: 12rem;
+  }
+
+  #arduino,
+  #python,
+  #node,
+  #vue {
+    margin-left: 5px;
+    width: 80%;
+    transition: width 0.1s ease-in-out;
+  }
+  #arduino:hover,
+  #python:hover,
+  #node:hover,
+  #vue:hover {
+    width: 100%;
+  }
+
+  #facebook,
+  #twitter,
+  #whatsapp,
+  #github {
+    margin-right: 5px;
+    width: 85%;
+    transition: width 0.1s ease-out;
+  }
+
+  #facebook:hover,
+  #twitter:hover,
+  #whatsapp:hover,
+  #github:hover {
+    width: 100%;
+  }
+</style>
+
+</html>
