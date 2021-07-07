@@ -138,5 +138,10 @@
     border: none;
     left: 5rem;
     bottom: 10.3rem;
+    transition: transform 0.5s ease;
+
+  }
+  #button-d:hover{
+    transform: scale(1.3);
   }
 
