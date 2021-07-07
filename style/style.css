@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+html,
+body.dark-mode {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to top left, #590d60, #0e395b);
+  background-size: 100% 200%;
+  transition: color 0.5s ease;
+}
+
+body.light-mode {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: black;
+  height: 100vh;
+  background: linear-gradient(to top left, #ddddee, #125182);
+  background-color: white;
+  transition: color 0.5s ease-in;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.box-info {
+  justify-self: center;
+  background-color: #ddd;
+  height: 180px;
+  width: 350px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+}
+
+#avatar {
+  box-shadow: 0 8px 15px 5px rgba(31, 38, 135, 0.37);
+  border-radius: 50%;
+  width: 80px;
+  bottom: 40px;
+  left: 7px;
+  position: relative;
+  transition: border-radius 0.5s ease-in;
+}
+
+#avatar:hover {
+  border-radius: 10px;
+}
+
+h4,
+p {
+  margin: 5px 10px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+.name {
+  font-size: 15px;
+  position: relative;
+  bottom: 20px;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 2.2rem 2.2rem;
+  grid-template-rows: 30px;
+  position: absolute;
+  bottom: 8.5rem;
+  margin-left: 16rem;
+  cursor: pointer;
+}
+
+.lang {
+  display: grid;
+  grid-template-columns: 1.5rem 1.5rem 1.5rem 1.6rem;
+  grid-template-rows: 6.5rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 3px;
+}
+
+#arduino,
+#python,
+#node,
+#vue {
+  margin-left: 5px;
+  width: 80%;
+  transition: transform 0.2s;
+}
+
+#arduino:hover,
+#python:hover,
+#node:hover,
+#vue:hover {
+  transform: scale(1.5);
+}
+
+#linkedin,
+#github {
+  margin-right: 5px;
+  width: 85%;
+  transition: transform 0.2s;
+}
+
+#linkedin:hover,
+#github:hover {
+  transform: scale(1.5);
+}
+
+#button-d {
+  cursor: pointer;
+  padding: 0px 0px;
+  text-align: center;
+  position: relative;
+  background-color: rgba(186, 65, 65, 0);
+  border: none;
+  left: 5rem;
+  bottom: 10.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
