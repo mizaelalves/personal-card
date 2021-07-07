@@ -15,8 +15,9 @@
         <img id="avatar" src="./assets/perfil.jpg" width="10%" />
         <div class="name">
           <h4>Mizael Alves da Silva</h4>
-          <p>Graduando de Engenharia de Computação</p>
+          <p>Cursando Engenharia de Computação</p>
           <p>Apaixonado por tecnologia</p>
+
         </div>
       </div>
       <div class="lang">
@@ -29,7 +30,7 @@
         <a href="https://facebook.com" target="_blank"><img id="facebook" src="./assets/facebook-logo-2019.svg" /></a>
         <a href="https://whatsapp.com" target="_blank"><img id="whatsapp" src="./assets/whatsapp.svg" /></a>
         <a href="https://twitter.com" target="_blank"><img id="twitter" src="./assets/twitter.svg" /></a>
-        <a href="https://github.com" target="_blank"><img id="github" src="./assets/github.svg" /></a>
+        <a href="https://github.com/mizaelalves" target="_blank"><img id="github" src="./assets/github.svg" /></a>
       </div>
     </div>
   </div>
@@ -50,13 +51,14 @@
   .container {
     height: 100%;
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: 400px;
     grid-template-rows: auto;
     justify-content: center;
     align-content: center;
   }
 
   .box-info {
+    
     justify-self: center;
     background-color: #ddd;
     height: 180px;
@@ -85,11 +87,14 @@
   h4, p {
     margin: 5px 10px;
   }
+  h4{
+    font-size: 19px;
+  }
 
   .name {
+    font-size: 15px;
     position: relative;
-    bottom: 50px;
-    margin-top: 20px;
+    bottom: 20px;
   }
 
   .social {
@@ -97,18 +102,18 @@
     grid-template-columns: 2.2rem 2.2rem 2.2rem 2.2rem;
     grid-template-rows: 30px;
     position: absolute;
-    bottom: 20px;
-    margin-left: 12.4rem;
+    bottom: 8.5rem;
+    margin-left: 12.5rem;
     cursor: pointer;
   }
 
   .lang {
     display: grid;
-    grid-template-columns: 2rem 2rem 2rem 2.2rem;
+    grid-template-columns: 1.5rem 1.5rem 1.5rem 1.6rem;
     grid-template-rows: 6.5rem;
     position: absolute;
-    bottom: 60px;
-    margin-left: 12rem;
+    bottom: 2rem;
+    left: 3px;
   }
 
   #arduino,
