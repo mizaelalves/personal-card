@@ -5,8 +5,10 @@ function toggleDarkLight() {
 
   var img = document.getElementById("moon");
   if (img.src.match("./assets/moon.svg")) {
+    
     img.src = "./assets/sun.svg";
   } else {
     img.src = "./assets/moon.svg";
+
   }
 }
